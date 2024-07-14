@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milica Blagojevic</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Milica Blagojevic</div>
+        <div>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo">Milica Blagojevic</div>
+        <div class="ham-menu">
+            <div class="ham-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-list">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/pfpresume1.jpg" alt="Milica profilna">
+        </div>
+
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 title="title">Milica Blagojevic</h1>
+            <p class="section-text-p2">Cybersecurity analyst</p>
+            <div clas="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-eng-milica.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Linked in profile" class="icon"
+                    onclick="window.open('https://ba.linkedin.com/', '_blank')" >
+                <img src="./assets/github.png" alt="Github profile" class="icon"
+                    onclick="window.open('https://github.com/milicablagojevic', '_blank')">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

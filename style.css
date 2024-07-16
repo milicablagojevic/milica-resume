@@ -44,6 +44,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 12vw;
+    
 }
 
 .nav-list {
@@ -177,16 +178,16 @@ section {
 
 #profile {
     justify-content: center;
-    gap: 8rem;
-    height: 60vh;
+    gap: 7rem;
+    height: 70vh;   /* SEE WHAT CAN BE DONE WITH THE HEIGHT*/
+    margin-bottom: 5rem;
 }
 
 .section-pic-container {
     display: flex;
-    justify-content: center;
-    width: 30rem;
-    height: 30rem;
-    margin: auto 0;
+    width: 25rem;
+    height: 25rem;
+    margin:auto 0;
     overflow: hidden;
     border-radius: 50%;
     
@@ -207,20 +208,33 @@ section {
 .section-text-p1 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
 
 }
 
 .section-text-p2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
 }
 
 h1 {
     font-size: 3rem;
     text-align: center;
-    margin: 6px 0;
-}
+    margin: 0.7rem 0;
+} 
+
+@keyframes typewriter {
+    0% {width: 0;}
+    100% {width: 100%;}
+  }
+
+.typewriter {
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto;  
+    animation: typewriter 2s steps(70, end);
+  }
 
 #socials-container {
     display: flex;
@@ -259,4 +273,7 @@ h1 {
 .btn-color-2:hover {
     color: #e6e6e6;
     background-color: #8B65AB;
+    cursor: pointer;
+    border:#8B65AB 0.1rem solid;
 }
+

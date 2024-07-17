@@ -44,7 +44,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 12vw;
-    
+
 }
 
 .nav-list {
@@ -179,7 +179,8 @@ section {
 #profile {
     justify-content: center;
     gap: 7rem;
-    height: 70vh;   /* SEE WHAT CAN BE DONE WITH THE HEIGHT*/
+    height: 70vh;
+    /* SEE WHAT CAN BE DONE WITH THE HEIGHT*/
     margin-bottom: 5rem;
 }
 
@@ -187,10 +188,10 @@ section {
     display: flex;
     width: 25rem;
     height: 25rem;
-    margin:auto 0;
+    margin: auto 0;
     overflow: hidden;
     border-radius: 50%;
-    
+/* EDIT AND UPDATE PICTURE SO THIS STYLING CAN BE MODIFIED AND APPLIED TO OTHER PICS, REMOVE BORDER RADUS*/
 }
 
 .section-text {
@@ -222,19 +223,24 @@ h1 {
     font-size: 3rem;
     text-align: center;
     margin: 0.7rem 0;
-} 
+}
 
 @keyframes typewriter {
-    0% {width: 0;}
-    100% {width: 100%;}
-  }
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
 
 .typewriter {
-    overflow: hidden; 
-    white-space: nowrap; 
-    margin: 0 auto;  
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
     animation: typewriter 2s steps(70, end);
-  }
+}
 
 #socials-container {
     display: flex;
@@ -246,6 +252,7 @@ h1 {
 .icon {
     cursor: pointer;
     height: 2rem;
+
 }
 
 /*Social buttons*/
@@ -266,14 +273,65 @@ h1 {
 }
 
 .btn-color-1,
-.btn-color-2 { 
-    border:rgb(53, 53, 53) 0.1rem solid;
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
 }
+
 .btn-color-1:hover,
 .btn-color-2:hover {
     color: #e6e6e6;
     background-color: #8B65AB;
     cursor: pointer;
-    border:#8B65AB 0.1rem solid;
+    border: #8B65AB 0.1rem solid;
 }
 
+/* About*/
+
+#about {
+    position: relative;
+}
+
+.about-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 3rem;
+}
+
+.about-dtl-cont {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container, 
+.about-dtl-cont {
+    display: flex;
+}
+
+.about-pic {
+
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.dtl-container {
+    padding: 1.5rem;
+    flex: 1;
+    text-align: center;
+    border-radius: 2rem;
+    border: #8B65AB 0.1rem solid;
+
+}
+.section-container {
+    gap:4rem;
+    height: 80%;
+}
+
+.section-container {
+    /*ADD W AND H OR PRE EDIT THE PIC IN PS SO IT FITS THE PURPOSE*/
+    margin: auto 0;
+}

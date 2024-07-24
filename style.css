@@ -189,7 +189,7 @@ section {
     width: 25rem;
     height: 25rem;
     margin: auto 0;
-    overflow: hidden;
+ /*   overflow: hidden;
     border-radius: 50%;
 /* EDIT AND UPDATE PICTURE SO THIS STYLING CAN BE MODIFIED AND APPLIED TO OTHER PICS, REMOVE BORDER RADUS*/
 }
@@ -324,14 +324,28 @@ h1 {
     text-align: center;
     border-radius: 2rem;
     border: #8B65AB 0.1rem solid;
-
+    background: rgb(245, 245, 245);
+    border-color: #8B65AB;
+    /* ZADNJE DVIJE LINIJE IDK STO SU POSEBNO NAPISANE??????
+     KAD JE SVE ISTO I BEZ NJIH*/
 }
 .section-container {
     gap:4rem;
     height: 80%;
 }
 
-.section-container {
+.section-pic-container {
     /*ADD W AND H OR PRE EDIT THE PIC IN PS SO IT FITS THE PURPOSE*/
     margin: auto 0;
+}
+
+/* EXP*/
+ #experience {
+    position: relative;
+ }
+
+.exp-dtl-cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

@@ -324,10 +324,7 @@ h1 {
     text-align: center;
     border-radius: 2rem;
     border: #8B65AB 0.1rem solid;
-    background: rgb(245, 245, 245);
-    border-color: #8B65AB;
-    /* ZADNJE DVIJE LINIJE IDK STO SU POSEBNO NAPISANE??????
-     KAD JE SVE ISTO I BEZ NJIH*/
+    
 }
 .section-container {
     gap:4rem;
@@ -349,3 +346,24 @@ h1 {
     justify-content: center;
     flex-direction: column;
 }
+
+.article-cont {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+
+ 
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+  
+  article .icon {
+    cursor: default;
+  }

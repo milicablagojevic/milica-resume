@@ -189,9 +189,6 @@ section {
     width: 25rem;
     height: 25rem;
     margin: auto 0;
- /*   overflow: hidden;
-    border-radius: 50%;
-/* EDIT AND UPDATE PICTURE SO THIS STYLING CAN BE MODIFIED AND APPLIED TO OTHER PICS, REMOVE BORDER RADUS*/
 }
 
 .section-text {
@@ -303,7 +300,7 @@ h1 {
     flex-direction: column;
 }
 
-.about-container, 
+.about-container,
 .about-dtl-cont {
     display: flex;
 }
@@ -325,10 +322,11 @@ h1 {
     text-align: center;
     border-radius: 2rem;
     border: #8B65AB 0.1rem solid;
-    
+
 }
+
 .section-container {
-    gap:4rem;
+    gap: 4rem;
     height: 80%;
 }
 
@@ -338,22 +336,22 @@ h1 {
 }
 
 /* EXP*/
- #experience {
+#experience {
     position: relative;
- }
+}
 
- .exp-subtitle {
+.exp-subtitle {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
- }
+}
 
 .exp-dtl-cont {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
 .article-cont {
@@ -363,33 +361,33 @@ h1 {
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
-  }
+}
 
- 
+
 article {
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
-  }
-  
-  article .icon {
+}
+
+article .icon {
     cursor: default;
-  }
+}
 
-  /* Project section*/
+/* Project section*/
 
-  #projects {
+#projects {
     position: relative;
-  }
+}
 
 .project-img {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
 }
+
 .project-title {
     margin: 1rem;
     color: black;
-  }
-  
+}

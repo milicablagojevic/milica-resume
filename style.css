@@ -295,6 +295,7 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 2rem;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .about-dtl-cont {
@@ -352,6 +353,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .article-cont {
@@ -380,3 +382,14 @@ article {
   #projects {
     position: relative;
   }
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.project-title {
+    margin: 1rem;
+    color: black;
+  }
+  

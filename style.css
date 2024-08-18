@@ -187,6 +187,7 @@ a:hover {
 
 .menu-list.open {
     max-height: 300px;
+    background-color: #f2f2f2;
 }
 
 .ham-icon.open span:first-child {
@@ -269,7 +270,8 @@ section {
 
 .section-text-p2 {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 
 }
 
@@ -450,4 +452,42 @@ article .icon {
 .project-title {
     margin: 1rem;
     color: black;
+}
+
+/* Contact section */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-container1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: #8B65AB 0.1rem solid;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.contact-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+
+}
+
+.contact-container2 p {
+    font-size:larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+.contact-text:hover{
+ text-decoration: none;
 }

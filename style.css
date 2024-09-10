@@ -51,15 +51,17 @@ text-decoration-color: #A094D8;}
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
     border-radius: 50%;
 }
+.menu-list.open {
+    background-color: #1a1a14;
+}
 }
 
 
 /* Toggle button styles */
 
 .toggle-button {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    position: fixed; 
+    top: 20px;
     background-color: #333;
     color: #f2f2f2;
     border: none;
@@ -67,6 +69,7 @@ text-decoration-color: #A094D8;}
     cursor: pointer;
     z-index: 1000;
     border-radius: 2rem;
+    right: 20px;
 
 }
 
@@ -243,6 +246,14 @@ section {
 .section-pic-container {
     /*SET PICTURE FOR NEXT SECTION AND SEE IF NEW CLASS SHOULD BE ADDED
     SHADOWS COULD BE MESSED UP*/
+    display: flex;
+    width: 25rem;
+    height: 25rem;
+    margin: auto 0;
+}
+.section-pfpic-container {
+    /*SET PICTURE FOR NEXT SECTION AND SEE IF NEW CLASS SHOULD BE ADDED
+    SHADOWS COULD BE MESSED UP, UPDATE: FIXED */
     display: flex;
     width: 25rem;
     height: 25rem;

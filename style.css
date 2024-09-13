@@ -469,6 +469,7 @@ article .icon {
 
 #contact {
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
@@ -481,6 +482,7 @@ article .icon {
     border: #8B65AB 0.1rem solid;
     margin: 2rem;
     padding: 0.5rem;
+    width: 70vh;
 }
 
 .contact-container2 {

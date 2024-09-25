@@ -5,18 +5,76 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: rgb(245, 245, 245);
+   
 }
 
 body {
     font-family: "Roboto Mono", monospace;
+    background-color: #f2f2f2;
     /*{
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: <weight> 100-700;
   font-style: normal,itallic;
+  osnova #1a1a14, glavni tekst #7c4dff, others #a094d8, #c7b8e3, #c5cae9
 }  
   */
+}
+
+/* Dark theme styles */
+
+body.dark-theme {
+
+    background-color: #1a1a14;
+    color: #f2f2f2;
+p {
+    color: #A094D8;
+}
+a, a:hover {color: #f2f2f2;
+text-decoration-color: #A094D8;}
+.btn {
+    background-color: #1a1a14;
+    color: #f2f2f2;
+    border: #f2f2f2 0.1rem solid;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    
+}
+.btn:hover {
+    background-color: #A094D8;
+    color: #1a1a14;
+    border: #A094D8 0.1rem solid;
+}
+.icon {
+    filter: invert(1);
+}
+.section-pic-container {
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    border-radius: 50%;
+}
+.menu-list.open {
+    background-color: #1a1a14;
+}
+}
+
+
+/* Toggle button styles */
+
+.toggle-button {
+    position: fixed; 
+    top: 20px;
+    background-color: #333;
+    color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 2rem;
+    right: 20px;
+
+}
+
+.toggle-button:hover {
+    background-color: #444;
 }
 
 html {
@@ -44,6 +102,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 12vw;
+
 }
 
 .nav-list {
@@ -56,7 +115,7 @@ nav {
 a {
     color: black;
     text-decoration: none;
-    text-decoration-color: white;
+    
 }
 
 a:hover {
@@ -131,6 +190,7 @@ a:hover {
 
 .menu-list.open {
     max-height: 300px;
+    background-color: #f2f2f2;
 }
 
 .ham-icon.open span:first-child {
@@ -177,19 +237,27 @@ section {
 
 #profile {
     justify-content: center;
-    gap: 8rem;
-    height: 60vh;
+    gap: 7rem;
+    height: 70vh;
+    /* SEE WHAT CAN BE DONE WITH THE HEIGHT*/
+    margin-bottom: 5rem;
 }
 
 .section-pic-container {
+    /*SET PICTURE FOR NEXT SECTION AND SEE IF NEW CLASS SHOULD BE ADDED
+    SHADOWS COULD BE MESSED UP*/
     display: flex;
-    justify-content: center;
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+    height: 25rem;
     margin: auto 0;
-    overflow: hidden;
-    border-radius: 50%;
-    
+}
+.section-pfpic-container {
+    /*SET PICTURE FOR NEXT SECTION AND SEE IF NEW CLASS SHOULD BE ADDED
+    SHADOWS COULD BE MESSED UP, UPDATE: FIXED */
+    display: flex;
+    width: 25rem;
+    height: 25rem;
+    margin: auto 0;
 }
 
 .section-text {
@@ -207,19 +275,38 @@ section {
 .section-text-p1 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
 
 }
 
 .section-text-p2 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 
 }
 
 h1 {
     font-size: 3rem;
     text-align: center;
-    margin: 6px 0;
+    margin: 0.7rem 0;
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typewriter 2s steps(70, end);
 }
 
 #socials-container {
@@ -232,6 +319,7 @@ h1 {
 .icon {
     cursor: pointer;
     height: 2rem;
+
 }
 
 /*Social buttons*/
@@ -252,11 +340,167 @@ h1 {
 }
 
 .btn-color-1,
-.btn-color-2 { 
-    border:rgb(53, 53, 53) 0.1rem solid;
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background-color: #f2f2f2;
 }
+
 .btn-color-1:hover,
 .btn-color-2:hover {
     color: #e6e6e6;
     background-color: #8B65AB;
+    cursor: pointer;
+    border: #8B65AB 0.1rem solid;
+}
+
+/* About*/
+
+#about {
+    position: relative;
+}
+
+.about-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.about-dtl-cont {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container,
+.about-dtl-cont {
+    display: flex;
+}
+
+.about-pic {
+
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.dtl-container {
+    padding: 1.5rem;
+    flex: 1;
+    text-align: center;
+    border-radius: 2rem;
+    border: #8B65AB 0.1rem solid;
+
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section-pic-container {
+    /*ADD W AND H OR PRE EDIT THE PIC IN PS SO IT FITS THE PURPOSE*/
+    margin: auto 0;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    border-radius: 50%;
+}
+
+/* EXP*/
+#experience {
+    position: relative;
+}
+
+.exp-subtitle {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.exp-dtl-cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.article-cont {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+/* Project section*/
+
+#projects {
+    position: relative;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+/* Contact section */
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contact-container1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: #8B65AB 0.1rem solid;
+    margin: 2rem;
+    padding: 0.5rem;
+    width: 70vh;
+}
+
+.contact-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+
+}
+
+.contact-container2 p {
+    font-size:larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+.contact-text:hover{
+ text-decoration: none;
 }

@@ -50,6 +50,9 @@
       height: fit-content;
       margin-top: 10rem;
     }
+    #experience{
+      height: 100%;
+  }
   }
   @media screen and (max-width: 480px) {
     #contact,

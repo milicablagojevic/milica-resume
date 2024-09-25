@@ -5,9 +5,12 @@
     #ham-nav {
         display: flex;
     }
-    #experience,
+    #experience {
+      height:100vh;
+    }
     .exp-dtl-cont {
       margin-top: 2rem;
+     
     }
     #profile,
     .section-container {
@@ -36,7 +39,7 @@
 
 @media screen and (max-width: 1400px) {
     #profile {
-      height: 83vh;
+      height: 100%;
       margin-bottom: 6rem;
     }
     .about-container {
@@ -45,19 +48,20 @@
     #contact,
     #projects {
       height: fit-content;
+      margin-top: 10rem;
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 480px) {
     #contact,
     footer {
-      height: 40vh;
+      height: 60vh;
     }
     #profile {
       height: 83vh;
       margin-bottom: 0;
     }
     #experience{
-        height: 80vh;
+        height: 100%;
     }
     article {
       font-size: 1rem;
@@ -69,6 +73,10 @@
     .about-container,
     .contact-container1,
     .btn-container {
+      flex-wrap: wrap;
+     
+    }
+    .about-pic{
       flex-wrap: wrap;
     }
     .contact-container2 {
@@ -92,19 +100,23 @@
     }
     .section-pic-container {
         
-        height: 46vw;
+        height: 60vw;
         justify-content: center;
     }
 
     .section-pfpic-container {
-        width: auto;
-        height: 50vw;
-        justify-content: center;
-        margin-bottom: 1rem;
+      width: auto;
+      height: 60vh;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+    }
+    .section-container {
+      justify-content: center;
     }
 
     .section-text-p2 {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
     .title {
       font-size: 2rem;

@@ -1,3 +1,18 @@
+@media screen and (max-width: 1400px) {
+  /* General styles */
+  #profile {
+    height: 100%;
+    margin-bottom: 6rem;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  #contact, #projects {
+    height: fit-content;
+    margin-top: 10rem;
+  }
+ 
+}
 @media screen and (max-width: 1200px){
     #desktop-nav{
         display: none;
@@ -5,9 +20,7 @@
     #ham-nav {
         display: flex;
     }
-    #experience {
-      height:100vh;
-    }
+    
     .exp-dtl-cont {
       margin-top: 2rem;
      
@@ -25,6 +38,7 @@
     }
     section {
       margin: 0 5%;
+      padding: 10vh 0;
     }
     .section-pic-container {
       width: 275px;
@@ -34,26 +48,14 @@
     .about-container {
       margin-top: 0;
     }
-  
-}
+    .section-pfpic-container {
+      width: auto;
+      height: 40vh;
+      justify-content: center;
+      margin-bottom: 1rem;
 
-@media screen and (max-width: 1400px) {
-    #profile {
-      height: 100%;
-      margin-bottom: 6rem;
     }
-    .about-container {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-      margin-top: 10rem;
-    }
-    #experience{
-      height: 100%;
-  }
-  }
+}
   @media screen and (max-width: 480px) {
     #contact,
     footer {
@@ -63,9 +65,7 @@
       height: 83vh;
       margin-bottom: 0;
     }
-    #experience{
-        height: 100%;
-    }
+    
     article {
       font-size: 1rem;
     }
@@ -111,13 +111,7 @@
         justify-content: center;
     }
 
-    .section-pfpic-container {
-      width: auto;
-      height: 40vh;
-      justify-content: center;
-      margin-bottom: 1rem;
-
-    }
+    
     .section-container {
       justify-content: center;
     }

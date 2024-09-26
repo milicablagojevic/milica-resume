@@ -20,11 +20,7 @@
     #ham-nav {
         display: flex;
     }
-    
-    .exp-dtl-cont {
-      margin-top: 2rem;
-     
-    }
+   
     #profile,
     .section-container {
       display: block;
@@ -32,10 +28,7 @@
     .arrow {
       display: none;
     }
-    section,
-    .section-container {
-      height: fit-content;
-    }
+    
     section {
       margin: 0 5%;
       padding: 10vh 0;
@@ -55,6 +48,23 @@
       margin-bottom: 1rem;
 
     }
+    .text-container {
+      text-align: center;
+  }
+  .article-cont{
+    gap:1rem;
+  }
+  .exp-subtitle {
+    font-size: 1.25rem;
+  }
+   
+  .exp-dtl-cont {
+    margin-top: 2rem;
+   
+  }
+  .section-text {
+    font-size: 1rem;
+  }
 }
   @media screen and (max-width: 480px) {
     #contact,
@@ -77,6 +87,7 @@
     .about-container,
     .btn-container {
       flex-wrap: wrap;
+      gap:1rem;
     }
     .contact-text{
       font-size: 12px;
@@ -93,9 +104,7 @@
     .nav-links li a {
       font-size: 1rem;
     }
-    .exp-subtitle {
-      font-size: 1.25rem;
-    }
+    
     .logo {
       font-size: 1.5rem;
     }
@@ -105,28 +114,30 @@
       text-align: center;
       font-size: 16px;
     }
-    .section-pic-container {
-        
-        height: 60vw;
-        justify-content: center;
-    }
-
-    
-    .section-container {
-      justify-content: center;
-    }
-
-    .section-text-p2 {
-      font-size: 1.5rem;
-    }
     .title {
       font-size: 2rem;
     }
-    .text-container {
-      text-align: justify;
-    }
+   
     h3, p{
       font-size: 15px;
     }
-  
+  .section-text-p1{
+    font-size: 20px;
+    margin: 5px;
+  }
+  .section-text-p2{
+    margin-bottom: 1rem;
+    margin-top:5px;
+  }
+  .logo {
+    display: none;
+  }
+  #ham-nav {
+    padding: 1rem 1rem;
+    justify-content: right;
+  }
+  .toggle-button {
+    right:auto;
+    top: 1rem;
+  }
   }

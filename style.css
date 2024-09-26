@@ -238,21 +238,18 @@ section {
     justify-content: center;
     gap: 7rem;
     height: 70vh;
-    /* SEE WHAT CAN BE DONE WITH THE HEIGHT*/
     margin-bottom: 5rem;
 }
 
 .section-pic-container {
-    /*SET PICTURE FOR NEXT SECTION AND SEE IF NEW CLASS SHOULD BE ADDED
-    SHADOWS COULD BE MESSED UP*/
+
     display: flex;
     width: 25rem;
     height: 25rem;
     margin: auto 0;
 }
 .section-pfpic-container {
-    /*SET PICTURE FOR NEXT SECTION AND SEE IF NEW CLASS SHOULD BE ADDED
-    SHADOWS COULD BE MESSED UP, UPDATE: FIXED */
+
     display: flex;
     width: 25rem;
     height: 25rem;
@@ -406,6 +403,7 @@ h1 {
     border-radius: 50%;
 }
 
+
 /* EXP*/
 #experience {
     position: relative;
@@ -427,7 +425,6 @@ h1 {
 
 .article-cont {
     display: flex;
-    text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
@@ -436,10 +433,10 @@ h1 {
 
 
 article {
-    display: flex;
     width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+    justify-content: left;
+    gap: 1rem;
+    
 }
 
 article .icon {

@@ -11,14 +11,6 @@
 body {
     font-family: "Roboto Mono", monospace;
     background-color: #f2f2f2;
-    /*{
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: <weight> 100-700;
-  font-style: normal,itallic;
-  osnova #1a1a14, glavni tekst #7c4dff, others #a094d8, #c7b8e3, #c5cae9
-}  
-  */
 }
 
 /* Dark theme styles */
@@ -54,6 +46,7 @@ text-decoration-color: #A094D8;}
 .menu-list.open {
     background-color: #1a1a14;
 }
+
 }
 
 
@@ -119,8 +112,7 @@ a {
 }
 
 a:hover {
-    color: #8B65AB;
-    text-decoration: underline;
+    color: #8B65AB;  
     text-underline-offset: 1rem;
     text-decoration-color: black;
 }

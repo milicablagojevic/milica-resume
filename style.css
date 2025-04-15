@@ -46,7 +46,9 @@ text-decoration-color: #A094D8;}
 .menu-list.open {
     background-color: #1a1a14;
 }
-
+span {
+    background-color: white;
+}
 }
 
 
@@ -448,8 +450,12 @@ article .icon {
 }
 
 .project-title {
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     color: black;
+}
+p.description {
+    padding-bottom: 1rem;
 }
 
 /* Contact section */
